@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         }else if(body.error){
             callback('Unable to find location. Please try with different coordinates!')
         }else{
-            callback(undefined, body.current.weather_descriptions[0]+'. It is currently '+ (body.current.temperature-32)*5/9 + ' degree celsius out.' + 
+            callback(undefined, body.current.weather_descriptions[0]+'. It is currently '+ Math.round((body.current.temperature-32)*5/9) + ' degree celsius out.' + 
             ' The humidity is '+body.current.humidity+', '+'windspeed is '+body.current.wind_speed*1.825 + ' km/h. and the visibilty is '+body.current.visibility + ' meters.'
             + ' The location is ' + body.location.lat + ' latitude and ' + body.location.lon + ' longitude')
         }
