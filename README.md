@@ -1,4 +1,9 @@
 # node3-weather-website
+Description
+Using this website we can search all the importannt components of live weather of anywhere around the world.
+We have to type the name of place in the given input box and click on search.
+This search will show the realtime weather of searched place.
+If we want to search weather of a local town we can use town name along with with district or post office place name. Ex- Borivali, Mumbai
 Live Website: https://erin-hatchling-sari.cyclic.app/
 
 Teckstack:
